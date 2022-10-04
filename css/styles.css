@@ -315,8 +315,7 @@ header,main,footer {
 }
 
 .card__img{
-    /* A voir */
-    width: -webkit-fill-available;
+    width: 96%;
     height: 113px;
     margin : 5px ;
     border-radius: 20px 20px 0 0 ;
