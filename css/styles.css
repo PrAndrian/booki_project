@@ -176,12 +176,20 @@ header,main {
     border: solid 2px var(--gris);
     padding: 0 20px 0 0;
     border-radius: 200px;
+    /* background: linear-gradient(to left, white 50%, var(--bleu-clair) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out; */
 }
 
 .filter__button:hover{
+    /* background-position: left;
+    background-size: 200%; */
     background-color: var(--bleu-clair);
-    background-size: 200% 100%;
-    transition: .2s ease-in;
+    transition: 0.5s ease;;
+}
+
+.filter__button:active{
+    background-color: var(--bleu-clair);
 }
 
 .icon-filter {
