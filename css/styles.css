@@ -22,7 +22,7 @@ a {
     color: initial;
 }
 
-header,main {
+header,main,footer {
     width: 100%;
     max-width: 1440px;
     padding : 0 3%;
@@ -176,15 +176,15 @@ header,main {
     border: solid 2px var(--gris);
     padding: 0 20px 0 0;
     border-radius: 200px;
-    /* background: linear-gradient(to left, white 50%, var(--bleu-clair) 50%) right;
+    background: linear-gradient(to left, white 50%, var(--bleu-clair) 50%) right;
     background-size: 200%;
-    transition: .5s ease-out; */
+    transition: .5s ease-out;
 }
 
 .filter__button:hover{
-    /* background-position: left;
-    background-size: 200%; */
-    background-color: var(--bleu-clair);
+    background-position: left;
+    background-size: 200%;
+    /* background-color: var(--bleu-clair); */
     transition: 0.5s ease;;
 }
 
@@ -255,7 +255,7 @@ header,main {
     display: flex;
     /* width: 100%; */
     /* min-width: 300px; */
-    min-height: 140px;
+    min-height: 144px;
     margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
@@ -264,11 +264,12 @@ header,main {
 }
 
 .card__popular__img{
-    width: 130px;
-    height: auto;
+    width: 137px;
+    height: 144px;
     border-radius: 20px 0 0 20px;
     margin: 7px;
     background-size: 234px auto;
+    object-fit: cover;
     background-position: center;
 }
 
@@ -277,18 +278,7 @@ header,main {
     flex-direction: column;
     justify-content: space-between;
     padding: 18px 0;
-    /* font-size: 80%;   */
     margin: 7px;
-}
-
-.img-popular-1{
-    background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-}
-.img-popular-2{
-    background-image: url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-}
-.img-popular-3{
-    background-image: url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
 
 /* Hébergement */
@@ -318,39 +308,21 @@ header,main {
 
 .card{
     width: 246px;
-    height: 198px;
+    height: 199px;
     border-radius: 20px ;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card__img{
-    width: auto;
+    /* A voir */
+    width: -webkit-fill-available;
     height: 113px;
     margin : 5px ;
     border-radius: 20px 20px 0 0 ;
     background-size: 234px auto;
     background-position: center;
     object-fit: cover;
-}
-
-.img-1{
-    background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-}
-.img-2{
-    background-image: url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-}
-.img-3{
-    background-image: url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-}
-.img-4{
-    background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-}
-.img-5{
-    background-image: url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-}
-.img-6{
-    background-image: url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
 .card__text{
@@ -379,11 +351,12 @@ header,main {
 .card-price{
     line-height: 1.5;
     font-weight:400;
-    font-size: 15px ;
+    font-size: 14px ;
 }
 
 .card__stars{
-    color: var(--bleu)
+    color: var(--bleu);
+    font-size: 12px;
 }
 
 .star-gray{
@@ -402,6 +375,7 @@ header,main {
     display :flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap : 30px;
     padding-bottom: 60px;
 }
@@ -572,6 +546,7 @@ footer{
     }
 
     /* HEBERGEMENT */
+    
     .lodging{
         width: 100%;
         padding : 0 30px;
@@ -592,7 +567,6 @@ footer{
     }
 
     /* ACTIVITE MARSEILLE */
-    
 
     .container__activity-right{
         width: 100%;
@@ -609,8 +583,6 @@ footer{
     .activity-big-card,.activity-small-card,.activity-small-card1 {
         height:190px;
     }
-
-
 }
 
 @media screen and (max-width: 1256px) and (min-width: 992px) {
@@ -635,5 +607,6 @@ footer{
     .popular-title{
         padding: 0;
     } 
+
 }
 

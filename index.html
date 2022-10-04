@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/2ace4a1d36.js" crossorigin="anonymous"></script>
-    <title>Booki App</title>
+    <link rel="icon" href="/images/logo/Booki.png" >
+    <title> Booki App</title>
 </head>
 <body> 
     <!-- NAVBAR --> 
@@ -27,11 +28,11 @@
         <h1 class="main-title">Trouvez votre Hébergements pour vos vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <!-- Search box -->
-        <form class="box__search" method="GET" action="#search">
+        <form class="box__search" method="GET" action="/">
             <div class="box__icon">
                 <i class="fa-solid fa-location-dot"></i>
             </div>
-            <input type="text" placeholder="Marseille, France" class="search__bar">
+            <input type="text" placeholder="Marseille, France" class="search__bar" name="destination">
             <button class="search__icon" type="submit"> 
                     <span class="display-icon">
                         <i class="fa-solid fa-magnifying-glass" ></i>
@@ -60,7 +61,7 @@
                 <div class="cards">
                     <article class="card">
                         <a href="#card1">
-                            <div class="card__img img-1"></div>
+                            <img class="card__img img-2" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="marcus-loke"/>
     
                             <div class="card__text">
                                 <h3 class="card-title">Auberge La Cannebière</h3>
@@ -78,7 +79,7 @@
                     </article>
                     <article class="card">
                         <a href="#card2">
-                            <div class="card__img img-2"></div>
+                            <img class="card__img img-2" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="reisetopia"/>
     
                             <div class="card__text">
                                 <h3 class="card-title">Hotêl du port</h3>
@@ -96,7 +97,7 @@
                     </article>
                     <article class="card">
                         <a href="#card3">
-                            <div class="card__img img-3"></div>
+                            <img class="card__img img-3" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="reisetopia"/>
     
                             <div class="card__text">
                                 <h3 class="card-title">Hotêl les mouettes</h3>
@@ -113,8 +114,8 @@
                         </a>
                     </article>
                     <article class="card">
-                            <a href="#card4">
-                            <div class="card__img img-4"></div>
+                        <a href="#card4">
+                            <img class="card__img img-4" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt"/>
     
                             <div class="card__text">
                                 <h3 class="card-title">Hotêl de la mer</h3>
@@ -132,7 +133,7 @@
                     </article>
                     <article class="card">
                         <a href="#card5">
-                            <div class="card__img img-5"></div>
+                            <img class="card__img img-5" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="nicate-lee"/>
     
                             <div class="card__text">
                                 <h3 class="card-title">Auberge Le Panier</h3>
@@ -150,7 +151,7 @@
                     </article>
                     <article class="card">
                             <a href="#card6">
-                            <div class="card__img img-6"></div>
+                                <img class="card__img img-6" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="febrian-zakaria"/>
     
                             <div class="card__text">
                                 <h3 class="card-title">Hotêl de chez Amina</h3>
@@ -184,7 +185,7 @@
                     <!-- articles -->
                     <article>
                         <a href="#card__popular1" class="card__popular">
-                            <div class="card__popular__img img-popular-1"></div>
+                            <img class="card__popular__img img-popular-1" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="emile-guillemot"/>
     
                             <div class="card__text__popular">
                                 <div>
@@ -207,7 +208,7 @@
                     <article>                        
                         <a href="#card__popular2" class="cards__popular">
                             <div class="card__popular">
-                                <div class="card__popular__img img-popular-2"></div>
+                                <img class="card__popular__img img-popular-2" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="aw-creative"/>
         
                                 <div class="card__text__popular">
                                     <div class="card-uper-text">
@@ -229,7 +230,7 @@
                     <article>
                         <a href="#card__popular3" class="cards__popular">
                             <div class="card__popular">
-                                <div class="card__popular__img img-popular-3"></div>
+                                <img class="card__popular__img img-popular-3" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="febrian-zakaria"/>
         
                                 <div class="card__text__popular">
                                     <div class="upper-text">
@@ -267,13 +268,13 @@
                     <div class="container__activity-small-cards">
                         <a href="#activity-small-card">
                             <article class="activity-small-card">
-                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort-de-Pomègues">
                                 <h3 class="title-activity">Fort de Pomègues</h3>
                             </article>
                         </a>
                         <a href="#activity-small-card1">
                             <article class="activity-small-card1">
-                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles-de-Frioule">
                                 <h3 class="title-activity">Iles de Frioule</h3>
                             </article>
                         </a>
@@ -282,7 +283,7 @@
             
                 <a href="#activity-big-card">
                     <article class="activity-big-card">
-                        <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                        <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Vieux-port">
                         <h3 class="title-activity">Vieux port</h3>
                     </article>
                 </a>
@@ -290,13 +291,13 @@
                     <div class="container__activity-small-cards">
                         <a href="#activity-small-card">
                             <article class="activity-small-card1">
-                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                                 <h3 class="title-activity">Notre-Dame-de-la-Garde</h3>
                             </article>
                         </a>
                         <a href="#activity-small-card1">
                             <article class="activity-small-card">
-                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc-Longchamp">
                                 <h3 class="title-activity">Parc Longchamp</h3>
                             </article>
                         </a>
