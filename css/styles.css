@@ -439,6 +439,7 @@ header,main {
 
 .activity-small-card{
     width:302px;
+    height: 239px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
 }
@@ -453,6 +454,7 @@ header,main {
 
 .activity-small-card1{
     width:302px;
+    height: 154px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
 }
@@ -532,6 +534,10 @@ footer{
     }
     .search__bar{
         max-width: 70%;
+    }
+
+    .box__search > button{
+        border-radius: 14px ;
     }
     /* FILTER */
 
