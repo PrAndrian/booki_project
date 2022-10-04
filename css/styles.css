@@ -139,7 +139,7 @@ header,main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
+    min-width: 50px;
     height: 50px;
     border-radius: 14px 0 0 14px ;
     background-color: var(--gris);
@@ -163,6 +163,10 @@ header,main {
     justify-content: start;
     flex-wrap: wrap;
     gap: 23px;
+}
+
+.filter-list > .filter__button:nth-child(2) > i{
+    padding: 14px 17px;
 }
 
 .filter__button{
@@ -235,9 +239,9 @@ header,main {
     font-size : 20px;
 }
 
-.cards__popular{
+/* .cards__popular{
     margin : auto;
-}
+} */
 
 .card__popular{
     display: flex;
@@ -263,9 +267,9 @@ header,main {
 .card__text__popular{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-    font-size: 80%;
+    justify-content: space-between;
+    padding: 18px 0;
+    /* font-size: 80%;   */
     margin: 7px;
 }
 
@@ -307,16 +311,15 @@ header,main {
 .card{
     width: 246px;
     height: 198px;
-    padding-top: 5px;
     border-radius: 20px ;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card__img{
-    width: 234px;
+    width: auto;
     height: 113px;
-    margin : auto ;
+    margin : 5px ;
     border-radius: 20px 20px 0 0 ;
     background-size: 234px auto;
     background-position: center;
@@ -351,8 +354,18 @@ header,main {
     font-weight: 700;
 }
 
+.card-title{
+    font-size: 16px;
+    margin: 0;
+    max-width: 190px;
+}
+
 .lodging-link{
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 0 30px 0px;
 }
 
 .card-price{
@@ -509,7 +522,9 @@ footer{
     .box__search{
         margin-top: 30px;
     }
-
+    .search__bar{
+        max-width: 70%;
+    }
     /* FILTER */
 
     .filter{
@@ -556,9 +571,7 @@ footer{
     }
 
     .card__img{
-        width: 98%;
         height: 113px;
-        margin : auto ;
         border-radius: 20px 20px 0 0 ;
         background-size: 234px auto;
         background-position: center;
@@ -575,13 +588,14 @@ footer{
         gap : 30px;
     }
 
-    .activity-big-card > img{
-        height:105px;
+    .activity-big-card > img,.activity-small-card > img, .activity-small-card1 > img{
+        height:134px;
     }
 
-    .activity-big-card{
-        height:160px;
+    .activity-big-card,.activity-small-card,.activity-small-card1 {
+        height:190px;
     }
+
 
 }
 
