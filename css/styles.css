@@ -337,10 +337,11 @@ header,main,footer {
 }
 
 .lodging-link{
+    margin-top: 60px;
+    padding-left: 5%;
+    font-size: 18px;
     border: none;
     background-color: transparent;
-    cursor: pointer;
-    padding: 0 0 30px 0px;
 }
 
 .card-price{
@@ -356,12 +357,6 @@ header,main,footer {
 
 .star-gray{
     color: var(--gris);
-}
-
-.lodging-link{
-    margin-top: 40px;
-    padding-left: 5%;
-    font-size: 18px;
 }
 
 /* ACTIVITE MARSEILLE */
@@ -524,6 +519,11 @@ footer{
         flex-wrap: wrap-reverse;
     }
 
+    /* HEBERGEMENT */
+    .lodging-link{
+        margin-top : 40px;
+    }
+
     /* POPULAR */
 
     .popular{
@@ -577,6 +577,10 @@ footer{
 
     .activity-big-card,.activity-small-card,.activity-small-card1 {
         height:190px;
+    }
+
+    footer{
+        gap: 26%;
     }
 }
 
