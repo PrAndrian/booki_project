@@ -54,8 +54,8 @@ header,main,footer {
 :root {
     --bleu: #0065FC;
     --bleu-clair: #DEEBFF;
-    --gris : #F2F2F2
-  }
+    --gris : #D9D9D9;
+}
 
 /* HEADER*/
 
@@ -289,11 +289,11 @@ header,main,footer {
 }
 
 .card{
+    background-color: white;
     width: 246px;
     height: 199px;
     border-radius: 20px ;
-    background-color: white;
-    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card__img{
