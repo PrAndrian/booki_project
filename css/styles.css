@@ -25,10 +25,14 @@ li{
    list-style: none; 
 }
 
+h4{
+    line-height: 0;
+}
+
 header,main,footer {
     width: 100%;
     max-width: 1440px;
-    padding : 0 15px;
+    padding : 0 30px;
     margin: auto;
 }
 
