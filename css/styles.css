@@ -41,7 +41,7 @@ header,main,footer {
 .activity-small-card:hover,
 .activity-small-card1:hover, 
 .activity-big-card:hover{
-    box-shadow: 0 4px 8px 0 var(--bleu), 0 6px 20px 0 var(--bleu-clair);
+    box-shadow: 0 3px 15px 0 var(--bleu);
 }
 
 /* CREATED CLASS */
@@ -58,7 +58,7 @@ header,main,footer {
 :root {
     --bleu: #0065FC;
     --bleu-clair: #DEEBFF;
-    --gris : #D9D9D9;
+    --gris : #f2f2f2;
 }
 
 /* HEADER*/
@@ -84,11 +84,6 @@ header,main,footer {
     color: var(--bleu);
     border-top: 2px solid blue;
 }
-
-
-/* .active{
-    color: var(--bleu);
-} */
 
 /* TITLE*/
 
@@ -375,7 +370,7 @@ header,main,footer {
     width:302px;
     height: 444px;
     border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
 }
 .activity-big-card > img{
     object-fit: cover;
@@ -395,7 +390,7 @@ header,main,footer {
 .activity-small-card{
     width:302px;
     height: 239px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
     border-radius: 25px;
 }
 
@@ -410,7 +405,7 @@ header,main,footer {
 .activity-small-card1{
     width:302px;
     height: 154px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
     border-radius: 25px;
 }
 
@@ -444,7 +439,7 @@ footer ul li {
 
 /* MEDIAQUERY */
 
-@media screen and (max-width: 1256px){
+@media (max-width: 1256px){
     
     .container-lodging-popular{
         flex-direction: column-reverse;
@@ -498,16 +493,17 @@ footer ul li {
     }
 
     /* 
-    ON PEUT UTILISER UN CONTENT AUSSI
-    
-    .active::before{
-        content: "";
-        background-color: var(--bleu);
-        width: 50%;
-        height: 2px;
-        position: absolute;
-        top: 10px;
-    } */
+        ON PEUT UTILISER UN CONTENT AUSSI
+        
+        .hover::before{
+            content: "";
+            background-color: var(--bleu);
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            top: 10px;
+        } 
+    */
 
     .navbar__link:hover{
         border-top: none;
